@@ -1,0 +1,100 @@
+/* Estilo do cabeçalho */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('img/sea.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
+    border-right: 2px solid rgba(255, 255, 255, .5);
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(30px);
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+}
+
+/* Estilo do texto "Mages" */
+.font {
+    font-family: fantasy;
+    margin-left: 10px;
+    font-size: 40px; /* Aumente o tamanho do texto "Mages" aqui */
+}
+
+/* Estilo dos botões */
+.botao-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 55px;
+}
+
+.ec {
+    display: flex;
+    justify-content: center;
+    padding-left: 1px;
+}
+
+.botao {
+    margin-left: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.1s ease-in-out;
+    border-radius: 100px;
+}
+
+/* Efeito ao passar o mouse */
+.botao::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Efeito de hover para o retângulo */
+.botao:hover::after {
+    opacity: 1;
+}
+
+.botao:hover {
+    background-color: rgb(209, 209, 209);
+    filter: brightness(1.5);
+    color: rgb(11, 0, 54);
+}
